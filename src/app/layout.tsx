@@ -27,7 +27,7 @@ export default function RootLayout({
         className={inter.className}
       >
         <div className="flex absolute left-1/2 top-[-240px] transform -translate-x-1/2 items-center justify-center">
-          <div className="w-[400px] h-[400px] sm:w-[450px] sm:h-[450px] md:w-[500px] md:h-[500px] rounded-full bg-gradient-to-b from-violet-900 via-violet-700 via-opacity-80 to-transparent bg-opacity-20 shadow-lg shadow-violet-900 blur-xl" />
+          <div className="w-[300px] md:w-[400px] h-[400px] rounded-full bg-gradient-to-b from-violet-900 via-violet-700 via-opacity-80 to-transparent bg-opacity-20 shadow-lg shadow-violet-900 blur-xl" />
         </div>
         <header className="w-full px-8 md:px-24 py-8">
           <NavBar />
