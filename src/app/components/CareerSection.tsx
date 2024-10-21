@@ -50,7 +50,6 @@ const CareerSection: React.FC = () => {
 
 
             </motion.p>
-
             <motion.p
                 className="text-left text-lg md:text-2xl text-gray-300 mb-4"
                 initial="hidden"
@@ -60,10 +59,10 @@ const CareerSection: React.FC = () => {
                     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
                 }}
             >
-                Trabalhei em grandes projetos para IBM Brasil, Banco do Brasil e etc...
+                Trabalhei em projetos de grandes empresas como IBM Brasil e Banco do Brasil
+
+
             </motion.p>
-
-
 
             <motion.p
                 className="text-left text-lg md:text-2xl text-gray-300"
