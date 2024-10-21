@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
         >
           <ul className="flex flex-col space-y-8">
             <li>
-              <AnimatedLink href="" className="w-full">
+              <AnimatedLink href="#sobre" className="w-full">
                 Sobre
               </AnimatedLink>
             </li>
@@ -52,8 +52,8 @@ const Navbar: React.FC = () => {
               </AnimatedLink>
             </li>
             <li>
-              <AnimatedLink href="#process" className="w-full">
-                Process
+              <AnimatedLink href="#stack" className="w-full">
+                Stack
               </AnimatedLink>
             </li>
             <li>
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
       {/* Menu para dispositivos maiores */}
       <ul className="hidden md:flex items-center justify-between">
         <li>
-          <AnimatedLink href="" className={""}>
+          <AnimatedLink href="#sobre" className={""}>
             Sobre
           </AnimatedLink>
         </li>
@@ -83,13 +83,13 @@ const Navbar: React.FC = () => {
           </AnimatedLink>
         </li>
         <li>
-          <AnimatedLink href="#ale-pellegrino" className="text-lg">
-            Alê Pellegrino
+          <AnimatedLink href="/" className="text-lg">
+            Alexandre Pellegrino
           </AnimatedLink>
         </li>
         <li>
-          <AnimatedLink href="#process" className={""}>
-            Process
+          <AnimatedLink href="#stack" className={""}>
+            Stack
           </AnimatedLink>
         </li>
         <li>
