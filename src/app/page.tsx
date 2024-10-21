@@ -1,101 +1,48 @@
 import Image from "next/image";
+import NavBar from "./components/NavBar";
+import { Instrument_Serif } from 'next/font/google'
+
+const instrument = Instrument_Serif(
+  {
+    subsets: ['latin'],
+    display: 'swap',
+    weight: "400"
+  }
+)
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <>
+      <header className="w-full px-8 md:px-24 py-8">
+        <NavBar />
+      </header>
+      <section className="flex h-screen flex-col py-4 items-center mt-12">
+        <div className="relative flex items-center justify-center">
+          <div className="bg-white bg-opacity-10 rounded-full p-4">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="https://scontent.fcgh10-1.fna.fbcdn.net/v/t1.6435-9/120290117_3392580947470354_7915877092020441808_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_ohc=LoYNgf6xRsMQ7kNvgEWX8hb&_nc_ht=scontent.fcgh10-1.fna&_nc_gid=A4WRJEnlGgY8MBfTS_eJMum&oh=00_AYAqFqT65tMltX8-CCL9PifJ7g9XCeTcDK19RdRVO7u3nA&oe=673DD475"
+              alt="Foto de Alexandre Pellegrino"
+              width={200}
+              height={200}
+              className="rounded-full"
             />
-            Deploy now
+          </div>
+          <a href="#contact" className="absolute z-10 flex items-center backdrop-blur-sm bottom-[-10px] px-4 py-2 text-sm bg-white bg-opacity-10 rounded-full">
+            <div className="w-2 h-2 rounded-full bg-green-500 shadow-md mr-2 animate-pulse" /> Online
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="flex absolute items-center justify-center h-screen">
+            <div className="w-96 h-96 z-[-999] rounded-full bg-violet-900 bg-opacity-20 shadow-lg shadow-violet-900 blur-xl"></div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <h1 className={`${instrument.className} mt-12 h-32 text-6xl md:text-8xl font-bold bg-gradient-to-r from-zinc-100 to-zinc-500 bg-clip-text text-transparent`}>
+          Alê Pellegrino
+        </h1>
+        <p>Desenvolvedor Web - São Paulo - Brazil</p>
+
+      </section>
+      <footer>
+
       </footer>
-    </div>
+    </>
   );
 }
