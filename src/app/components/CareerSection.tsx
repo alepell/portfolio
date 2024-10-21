@@ -36,7 +36,6 @@ const CareerSection: React.FC = () => {
 
 
             </motion.p>
-
             <motion.p
                 className="text-left text-lg md:text-2xl text-gray-300 mb-4"
                 initial="hidden"
@@ -64,6 +63,8 @@ const CareerSection: React.FC = () => {
                 Trabalhei em grandes Empresas como IBM Brasil, MJV Innovation e agora estou no Santander pela F1rst Técnologia
             </motion.p>
 
+
+
             <motion.p
                 className="text-left text-lg md:text-2xl text-gray-300"
                 initial="hidden"
@@ -75,7 +76,6 @@ const CareerSection: React.FC = () => {
             >
                 Vamos transformar suas ideias em realidade digital. Entre em contato para mais informações!
             </motion.p>
-
             <motion.a
                 href='https://wa.me/5511954893231'
                 className="bg-pink-600 font-semibold text-md px-12 py-4 mt-12 md:mt-24 rounded-full"
