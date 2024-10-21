@@ -60,7 +60,7 @@ const CareerSection: React.FC = () => {
                     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
                 }}
             >
-                Trabalhei em grandes Empresas como IBM Brasil, MJV Innovation e agora estou no Santander pela F1rst Técnologia
+                Trabalhei em grandes projetos para IBM Brasil, Banco do Brasil e etc...
             </motion.p>
 
 
