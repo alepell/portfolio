@@ -31,8 +31,24 @@ const CareerSection: React.FC = () => {
                     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
                 }}
             >
-                Tenho mais de 5 anos de experiência como desenvolvedor web, trabalhando em grandes
-                projetos com tecnologias modernas como React, Next.js e recentemente automações com n8n.
+                Meu nome é Alexandre Pellegrino e sou especialista em criar sites que
+                ajudam pessoas e empresas a se destacarem online!
+
+
+            </motion.p>
+            <motion.p
+                className="text-left text-lg md:text-2xl text-gray-300 mb-4"
+                initial="hidden"
+                animate={controls}
+                variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
+                }}
+            >
+                Também crio bots para whatsapp com inteligência artificial treinado para seu negócio, se você está pensando em ter um site novo ou melhorar o que já tem, eu posso te ajudar.
+                Transformo suas ideias em um site bonito e fácil de usar.
+
+
             </motion.p>
 
             <motion.p
@@ -47,18 +63,7 @@ const CareerSection: React.FC = () => {
                 Trabalhei em grandes Empresas como IBM Brasil, MJV Innovation e agora estou no Santander pela F1rst Técnologia
             </motion.p>
 
-            <motion.p
-                className="text-left text-lg md:text-2xl text-gray-300 mb-4"
-                initial="hidden"
-                animate={controls}
-                variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.4 } },
-                }}
-            >
-                Também presto serviços de criação de e-commerce, desenvolvimento de aplicativos, Websites
-                e soluções personalizadas para empresas.
-            </motion.p>
+
 
             <motion.p
                 className="text-left text-lg md:text-2xl text-gray-300"
