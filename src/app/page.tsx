@@ -46,7 +46,7 @@ export default function Home() {
               className="rounded-full"
             />
           </div>
-          <a href="#contact" className="absolute z-10 flex items-center backdrop-blur-sm bottom-[-10px] px-4 py-2 text-sm bg-white bg-opacity-10 rounded-full">
+          <a href="#contato" className="absolute z-10 flex items-center backdrop-blur-sm bottom-[-10px] px-4 py-2 text-sm bg-white bg-opacity-10 rounded-full">
             <div className="w-2 h-2 rounded-full bg-green-500 shadow-md mr-2 animate-pulse" /> Online
           </a>
 
